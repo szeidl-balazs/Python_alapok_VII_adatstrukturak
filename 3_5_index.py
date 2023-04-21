@@ -12,8 +12,8 @@ def get_game_number(list, number):
 def print_final_stat(list):
     min_score = get_min_score(list)
     max_score = get_max_score(list) 
-    min_index = get_game_number(list, get_min_score(list))
-    max_index = get_game_number(list, get_max_score(list))
+    min_index = get_game_number(list, min_score)
+    max_index = get_game_number(list, max_score)
     print('A fináléban játszott mérkőzések közül a legalacsonyabb pontszámú a ' + str(min_index) + '. meccs volt ' + str(min_score) + ' ponttal.')
     print('A fináléban játszott mérkőzések közül a legmagasabb pontszámú a ' + str(max_index) + '. meccs volt ' + str(max_score) + ' ponttal.')
 
